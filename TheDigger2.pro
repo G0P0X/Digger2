@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,10 +10,14 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    game.cpp
+    game.cpp \
+    player.cpp \
+    score.cpp
 
 HEADERS += \
-    game.h
+    game.h \
+    player.h \
+    score.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

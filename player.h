@@ -5,15 +5,12 @@
 #include <QObject>
 #include <QGraphicsItem>
 
-class Player:public QObject, public QGraphicsPixmapItem
+class Player : public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT
 public:
     Player(QGraphicsItem *parent = nullptr);
     void keyPressEvent(QKeyEvent *event);
-
-public slots:
-    void spawn();
 
 };
 
