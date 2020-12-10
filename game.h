@@ -8,6 +8,7 @@
 
 #include "player.h"
 #include "score.h"
+#include "block.h"
 
 class Game : public QGraphicsView
 {
@@ -20,6 +21,7 @@ public:
     QGraphicsScene *scene; // объявляем графическую сцену
     Player *player; // игрок
     Score *score; // счет
+    Block *block;
 
     //void MainMenu();
     void gameOver();

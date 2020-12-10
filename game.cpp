@@ -29,6 +29,11 @@ Game::Game(QWidget *parent) : QGraphicsView(parent)
     score = new Score();
     scene->addItem(score);
 
+    // создаем блок
+    block = new Block();
+    block->setPos(35,120);
+    scene->addItem(block);
+
 
     // фоновая музыка
 //    QMediaPlayer *music = new QMediaPlayer();
