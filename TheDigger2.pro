@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -9,11 +9,17 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    block.cpp \
     main.cpp \
-    game.cpp
+    game.cpp \
+    player.cpp \
+    score.cpp
 
 HEADERS += \
-    game.h
+    block.h \
+    game.h \
+    player.h \
+    score.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
